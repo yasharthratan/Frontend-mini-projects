@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="author" content="Yasharth Tripathi">
+	
+	<title>Word & Character Count</title>
+	<link href="https://fonts.googleapis.com/css2?family=Sansita+Swashed:wght@600&display=swap" rel="stylesheet">
+
+	<style>
+		*{margin: 0;padding: 0;font-family: 'Sansita Swashed', cursive;}
+		div{
+			height: 100vh;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			flex-direction: column;
+		}
+
+		textarea{
+			border:2px solid #0984e3; border-radius: 10px; outline: none;font-size: 1.2rem;padding: 10px 2px; box-shadow: 0 0 4px 1px #b2bec3;}
+			button
+			{
+				padding: 20px 30px;
+				background-color: #e17055;
+				color: white;
+				border-radius: 10px;
+				border: 2px solid #d63031;
+				font-size: 1.2rem;
+				outline: none;
+
+			}
+
+			p
+			{
+				color:#6c5ce7; font-size:1.2rem; 
+              
+			}
+		}
+	</style>
+</head>
+<body>
+
+<div>
+	  <textarea cols="100" rows="20" id="words"></textarea>
+	  <br>
+	  <p id="showdata"></p>
+	  <p id="showwordscount"></p>
+	  <br>
+	  <button onclick="countwords()">Count</button>
+</div>
+
+<script>
+	const countwords = () =>{
+		let noofchar = document.getElementById('words').value.length;
+		let noofwords = document.getElementById('words').value;
+        noofwords=noofwords.match( /\w+/g );
+        noofwords=noofwords.length;
+        console.log(noofwords);
+
+
+
+		
+		document.getElementById('showdata').innerHTML = "Total characters = " + noofchar;
+
+		document.getElementById('showwordscount').innerHTML = "Total words = " + noofwords;
+
+	}
+</script>
+
+</body>
+</html>
