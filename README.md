@@ -1,4 +1,4 @@
-# Frontend-mini-projects
+# Frontend-mini-projects(Skillship Tasks)
 [![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/yasharthratan/Frontend-mini-projects?logo=github&style=social)](https://github.com/yasharthratan/) [![GitHub last commit](https://img.shields.io/github/last-commit/yasharthratan/Frontend-mini-projects?style=social&logo=git)](https://github.com/yasharthratan/) [![GitHub stars](https://img.shields.io/github/stars/yasharthratan/Frontend-mini-projects?style=social)](https://github.com/yasharthratan/Frontend-mini-projects/stargazers) 
 ## 1-Words & Character Count Website
 ### Requirements:-
